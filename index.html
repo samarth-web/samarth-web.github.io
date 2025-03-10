@@ -7,47 +7,65 @@
     <!-- Bootstrap CSS CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            padding-top: 80px; /* Space for fixed navbar */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background: #222; /* Dark background for the whole page */
         }
-        .container {
-            max-width: 960px;
-        }
-        nav {
-            background-color: #343a40; /* Darker shade for the navbar */
-        }
-        #about {
-            background-color: #f8f9fa; /* Light gray background */
-            color: #212529;
-        }
-        #projects {
-            background-color: #007bff; /* Bootstrap primary blue */
-            color: #ffffff;
-        }
-        #contact {
-            background-color: #28a745; /* Bootstrap green */
-            color: #ffffff;
-        }
-        footer {
-            background-color: #6c757d; /* Bootstrap gray */
-            color: #ffffff;
-            padding: 10px 0;
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
         }
-        .card {
-            margin-top: 20px;
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            text-transform: uppercase;
         }
-        .card-body {
-            background-color: #ffffff; /* Cards are white with dark text */
-            color: #212529;
+        .hero {
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
         }
-        .btn-primary {
-            background-color: #ffc107; /* Bootstrap yellow for buttons */
-            border-color: #ffc107;
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
-        .btn-primary:hover {
-            background-color: #e0a800;
-            border-color: #d39e00;
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .content-section {
+            padding: 100px 20px;
+            text-align: center;
+            background: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .btn {
+            background-color: #007bff; /* Bootstrap primary blue */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
